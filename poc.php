@@ -40,8 +40,8 @@ use Aws\S3\S3Client;
 
     $bucket = 'testndc';
     $fichier = 'stockage_objet_NDC.txt';
-    $clef_API = 'AKIAUOZA2GTLUGR4NUYF';
-    $secret_API = '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';
+    $clef_API = 'ma_clef_API';
+    $secret_API = 'ma_secret_key_API';
 
 try {
     $s3 = new S3Client([
@@ -75,7 +75,7 @@ echo "</p>\n";
 echo "<p>\n";
 $serveur = 'localhost';
 $user = 'testndcuser';
-$password = 'fluctuat';
+$password = 'mon_password';
 $base = 'testndc';
 
 // Create connection
