@@ -1,4 +1,4 @@
-# Instrucitons d'installation
+# Instructions d'installation
 
 Dans cette arborescence, vous trouverez des exemples de manifestes à utiliser pour déployer les applications dans Kubernetes.
 
