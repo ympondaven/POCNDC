@@ -20,7 +20,7 @@ spec:
         tier: backend
     spec:
       containers:
-      - image: alisanhajilog/lamp-k8s-php:v1
+      - image: lamp-k8s-php
         imagePullPolicy: Always
         name: lamp-php-fpm
         env:
