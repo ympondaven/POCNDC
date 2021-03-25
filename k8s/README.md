@@ -4,11 +4,9 @@ Dans cette arborescence, vous trouverez des exemples de manifestes à utiliser p
 
 Nous vous laissons les adapter à vos besoins, notamment la différenciation App2 / App3, les modifications de code pour le stockage objet, le nombre de replicas, les liens entre composants et notamment avec la base de données PaaS, les expositions publiques / privées, le service mesh, etc.
 
-L'image "lamp-k8s-php" est à reconstruire sur la base du dockerfile disponible dans la section "sources".
-
 ```
-kubectl apply -f manifests/lamp-k8s-namespace.yaml
-kubectl apply -f manifests
+kubectl create -f manifests/lamp-k8s-namespace.yaml
+kubectl create -f manifests
 kubectl get all -n lamp-k8s
 ```
 
