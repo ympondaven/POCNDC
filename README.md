@@ -13,8 +13,7 @@ Vous trouverez ensuite dans le répertoire "binaires"  :
 - le bytecode java
 
 Enfin, vous trouverez dans le répertoire "k8s" :
-- des conteneurs prégénérés
-- des exemples de scripts de déploiement
+- des exemples de scripts de déploiement utilisant des conteneurs publics
 
 À noter que des adaptations devront être faites afin de déployer ces différentes applications dans les différents environnements. Les présents fichiers n'incluent pas :
 - la création des objets et ressources externes (BDD PaaS, stockage objet, clusters k8s, infra IaaS, etc.)
