@@ -5,14 +5,11 @@ Vous trouverez dans de dépôt les fichiers nécessaires à la mise en place du 
 Tout d'abord, vous trouverez les sources dans le répertoire "sources" : 
 - la conf apache
 - le code PHP
-- le code java (à venir)
+- le code java
 - le dump de la BDD SQL
 - le fichier à déposer dans le stockage objet
 
-Vous trouverez ensuite dans le répertoire "binaires"  :
-- le bytecode java (à venir)
-
-Enfin, vous trouverez dans le répertoire "k8s" :
+Vous trouverez ensuite dans le répertoire "k8s" :
 - des exemples de scripts de déploiement utilisant des conteneurs publics
 
 Vous devrez adapter le code PHP (dans sources/poc.php ou dans k8s/manifests/php-content-configmap.yaml) afin de mettre en place le lien vers le stockage objet. De plus, vous pourrez faire évoluer la valeur de la boucle dans ces mêmes fichiers afin de faciliter la montée en charge des pods.
