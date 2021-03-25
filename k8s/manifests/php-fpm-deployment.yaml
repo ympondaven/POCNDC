@@ -20,17 +20,17 @@ spec:
         tier: backend
     spec:
       containers:
-      - image: lamp-k8s-php
-        imagePullPolicy: Always
+      - image: bitnami/php-fpm:8.0
         name: lamp-php-fpm
-        env:
-        - name: LAMP_K8S_DB_HOST
-          value: lamp-mysql
-        - name: LAMP_K8S_DB_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
         ports:
         - containerPort: 9000
           name: lamp-php-fpm
+        volumeMounts:
+        - name: lamp-phpcontent
+          mountPath: /app/
+          readOnly: true
+      volumes:
+      - name: lamp-phpcontent
+        configMap:
+          name: php-content
+
