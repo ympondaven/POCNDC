@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: poc-ndc-serverless
+
+cloud:
+    aws:
+        credentials:
+            accessKey: Access_key
+            secretKey: Secret_key
+        region:
+            static: eu-west-3
+            auto: false
+        stack:
+            auto: false
+
+location:
+    bucket: testndc
+    object: stockage_objet_NDC.txt
+    service: http://lamp-apache/<element>
